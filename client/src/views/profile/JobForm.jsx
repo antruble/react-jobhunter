@@ -5,7 +5,7 @@ const JobForm = ({ formData, handleChange, handleSubmit, handleCancel, isFetchin
     <form onSubmit={handleSubmit}>
       {['company', 'position', 'description', 'city'].map((field) => (
         <div key={field} className="mb-4">
-          <label className="block text-gray-700 font-semibold">
+          <label className="block text-black font-semibold text-lg ">
             {field.charAt(0).toUpperCase() + field.slice(1)}:
           </label>
           <input
@@ -13,13 +13,13 @@ const JobForm = ({ formData, handleChange, handleSubmit, handleCancel, isFetchin
             name={field}
             value={formData[field]}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+            className="mt-1 block w-full rounded-md border-gray-200 border-2 shadow-sm focus:border-indigo-500 px-2 py-1"
           />
         </div>
       ))}
       {['salaryFrom', 'salaryTo'].map((field) => (
         <div key={field} className="mb-4">
-          <label className="block text-gray-700 font-semibold">
+          <label className="block text-black font-semibold text-lg ">
             {field.charAt(0).toUpperCase() + field.slice(1)}:
           </label>
           <input
@@ -27,17 +27,17 @@ const JobForm = ({ formData, handleChange, handleSubmit, handleCancel, isFetchin
             name={field}
             value={formData[field]}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+            className="mt-1 block w-full rounded-md border-gray-200 border-2 shadow-sm focus:border-indigo-500 px-2 py-1"
           />
         </div>
       ))}
       <div className="mb-4">
-        <label className="block text-gray-700 font-semibold">Típus:</label>
+        <label className="block text-black font-semibold text-lg ">Típus:</label>
         <select
           name="type"
           value={formData.type}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+          className="mt-1 block w-full rounded-md border-gray-200 border-2 shadow-sm focus:border-indigo-500 px-2 py-1"
         >
           <option value="full-time">Teljes munkaidő</option>
           <option value="part-time">Részmunkaidő</option>
@@ -45,7 +45,7 @@ const JobForm = ({ formData, handleChange, handleSubmit, handleCancel, isFetchin
         </select>
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700 font-semibold">Home office:</label>
+        <label className="block text-black font-semibold text-lg ">Home office:</label>
         <input
           type="checkbox"
           name="homeOffice"

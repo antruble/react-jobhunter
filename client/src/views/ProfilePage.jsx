@@ -20,11 +20,21 @@ const ProfilePage = () => {
   if (isUserLoading || isUserExperiencesLoading || isUserJobsLoading) return <p>Loading...</p>;
 
   return (
-    <div className="container mx-auto mt-4 p-4 bg-white rounded-md shadow-md">
-      <h1 className="text-3xl font-bold mb-4">Profilom</h1>
-      <UserProfile user={user} />
-      {role === 'jobseeker' && <UserExperiences experiences={userExperiences.data} />}
-      {role === 'company' && <UserJobs jobs={userJobs.data} />}
+    <div className="container mx-auto mt-4 p-4 bg-gray-800 text-teal-100 rounded-md shadow-md">
+      <h1 className="text-3xl font-bold mb-4 text-center text-teal-100">Profilom</h1>
+      <div className="bg-gray-700 p-4 rounded-md shadow-md">
+        <UserProfile user={user} />
+      </div>
+      {role === 'jobseeker' && (
+        <div className="mt-4 bg-gray-700 p-4 rounded-md shadow-md">
+          <UserExperiences experiences={userExperiences.data} />
+        </div>
+      )}
+      {role === 'company' && (
+        <div className="mt-4 bg-gray-700 p-4 rounded-md shadow-md">
+          <UserJobs jobs={userJobs.data} />
+        </div>
+      )}
     </div>
   );
 };

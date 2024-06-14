@@ -68,40 +68,40 @@ const UserExperiences = ({ experiences }) => {
 
   return (
     <div className="mt-8">
-      <h2 className="text-2xl text-black font-semibold mb-4">Munkatapasztalatok</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h2 className="text-2xl text-teal-100 font-semibold mb-4">Munkatapasztalatok</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {experiences.map((experience) => (
-          <div key={experience.id} className="p-4 bg-gray-100 rounded-md shadow-md">
+          <div key={experience.id} className="p-4 bg-gray-100 rounded-md shadow-md text-black">
             {editingId === experience.id ? (
               <form onSubmit={handleEditSubmit}>
                 <div>
-                  <label className="block text-gray-700 font-semibold">Cég:</label>
+                  <label className="block text-black font-semibold">Cég:</label>
                   <input
                     type="text"
                     name="company"
                     value={editFormData.company}
                     onChange={handleEditChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                    className="mt-1 py-1 px-2 block w-full rounded-md border-gray-300 shadow-sm "
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold">Pozíció:</label>
+                  <label className="block text-black font-semibold">Pozíció:</label>
                   <input
                     type="text"
                     name="title"
                     value={editFormData.title}
                     onChange={handleEditChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                    className="mt-1 py-1 px-2 block w-full rounded-md border-gray-300 shadow-sm "
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold">Időtartam:</label>
+                  <label className="block text-black font-semibold">Időtartam:</label>
                   <input
                     type="text"
                     name="interval"
                     value={editFormData.interval}
                     onChange={handleEditChange}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                    className="mt-1 py-1 px-2 block w-full rounded-md border-gray-300 shadow-sm "
                   />
                 </div>
                 <div className="mt-2">
@@ -123,9 +123,9 @@ const UserExperiences = ({ experiences }) => {
               </form>
             ) : (
               <>
-                <h3 className="text-xl font-semibold">{experience.company}</h3>
-                <p className="text-gray-700">{experience.title}</p>
-                <p className="text-gray-700">{experience.interval}</p>
+                <h3 className="text-xl font-semibold text-purple-700">{experience.company}</h3>
+                <p className="text-black">{experience.title}</p>
+                <p className="text-black">{experience.interval}</p>
                 <button
                   onClick={() => handleEdit(experience)}
                   className="mt-2 bg-yellow-600 text-white py-1 px-2 rounded-md hover:bg-yellow-700"
@@ -134,7 +134,7 @@ const UserExperiences = ({ experiences }) => {
                 </button>
                 <button
                   onClick={() => handleDelete(experience.id)}
-                  className="mt-2 bg-red-600 text-white py-1 px-2 rounded-md hover:bg-red-700"
+                  className="mt-2  ml-2 bg-red-600 text-white py-1 px-2 rounded-md hover:bg-red-700"
                   disabled={isFetching}
                 >
                   {isFetching ? 'Törlés...' : 'Törlés'}

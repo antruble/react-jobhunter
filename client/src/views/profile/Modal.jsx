@@ -9,11 +9,12 @@ const Modal = ({ children, onClose }) => (
       <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
         &#8203;
       </span>
-      <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+      <div className="inline-block text-black align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left 
+      overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full sm:p-6">
         {children}
-        <button onClick={onClose} className="mt-4 bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700">
-          Close
-        </button>
+        {/* <button onClick={onClose} className="mt-4 bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700">
+          Mégse
+        </button> */}
       </div>
     </div>
   </div>

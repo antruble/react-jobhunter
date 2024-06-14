@@ -246,7 +246,7 @@ Az elkészült program beadása a Canvasen történik, és két dolgot kell ide 
 - [x] Főoldal: A Főoldal megjelenik a keresővel (1pt)
 - [x] Főoldal: Az oldalon kilistázza a meghirdetett állásokat (1pt)
 - [x] Főoldal: Az oldalon lehet szűrni az állásokra (2pt)
-- [xmajdnem] Főoldal: Az állásokra kattintva átvisz minket az alkalmazás az álláshirdetés részletező oldalára, ahol az ahhoz tartozó adatok jelennek meg (2pt)
+- [x] Főoldal: Az állásokra kattintva átvisz minket az alkalmazás az álláshirdetés részletező oldalára, ahol az ahhoz tartozó adatok jelennek meg (2pt)
 - [x] Regisztráció: A regisztráció működik (1pt)
 - [x] Regisztráció: A felhasználó munkavállalóként és munkáltatóként is regisztrálhat, különböző mezők jelennek meg a leendő fiók típusától függően (3pt)
 - [x] Regisztráció: Munkavállaló regisztráció esetén a felhasználó meg tudja adni a tapasztalatait (2pt)
