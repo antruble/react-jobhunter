@@ -4,13 +4,10 @@ const baseUrl = 'http://localhost:3030/';
 
 const prepareHeaders = (headers, { getState }) => {
     const token = getState().auth.token
-    // If we have a token set in state, let's assume that we should be passing it.
-    console.log(token);
     if (token) {
       headers.set('authorization', `Bearer ${token}`)
     }
-
-    return headers
+    return headers;
 };
 
 export const experienceApi = createApi({
@@ -30,7 +27,7 @@ export const experienceApi = createApi({
       query(id) {
         return {
           url: `experiences/${id}`,
-          method: 'DELETE'
+          method: 'DELETE',
         };
       },
     }),
@@ -55,7 +52,7 @@ export const experienceApi = createApi({
     deleteJobById: builder.mutation({
       query(id) {
         return {
-          url: `jobs?${id}`,
+          url: `jobs/${id}`,
           method: 'DELETE',
         };
       },
@@ -69,6 +66,18 @@ export const experienceApi = createApi({
         };
       },
     }),
+    addJob: builder.mutation({
+      query(body) {
+        return {
+          url: `jobs`,
+          method: 'POST',
+          body,
+        };
+      },
+    }),
+    getApplicantsForJob: builder.query({
+      query: (jobId) => `applicants?jobId=${jobId}`,
+    })
   }),
 });
 
@@ -77,8 +86,10 @@ export const {
   useGetUserInfoByIdQuery, 
   useGetUserExperiencesQuery, 
   useDeleteExperienceMutation, 
-  useModifyExperienceMutation , 
+  useModifyExperienceMutation, 
   useGetJobsByUserIdQuery,
   useDeleteJobByIdMutation,
   useModifyJobMutation,
+  useAddJobMutation,
+  useGetApplicantsForJobQuery,
 } = experienceApi;

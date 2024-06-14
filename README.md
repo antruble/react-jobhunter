@@ -255,11 +255,11 @@ Az elkészült program beadása a Canvasen történik, és két dolgot kell ide 
 - [x] Munkavállaló - Profilom: A korábban hozzáadott munkatapasztalatok szerkeszthetőek (1pt)
 - [x] Munkavállaló - Álláshirdetések oldala: A gomb megjelenik, amivel az állásra tudunk jelentkezni. Sikeres kérés esetén a felhasználó számára megjelenik egy üzenet a sikeres jelentkezésről (1 pont)
 - [x] Munkáltató - Navigáció: Kizárólag bejelentkezett munkáltató esetén jelenik meg az álláshirdetés hozzáadása opció (1pt)
-- [ ] Munkáltató - Profilom: Listázásra kerülnek a hozzáadott álláshirdetések, az egyes listaelemek mellett a szerkesztés, törlés és megtekintés opciók, megjelenik a “Hozzáadás” gomb (2pt)
-- [ ] Munkáltató - Profilom: A megtekintés gomb hatására a felhasználó számára listázásra kerülnek az adott hirdetésre jelentkezett munkavállalók (1pt)
-- [ ] Munkáltató - Profilom: Álláshirdetés törlése működik (1pt)
-- [ ] Munkáltató - Álláshirdetés hozzáadása: Álláshirdetés hozzáadása működik (2pt)
-- [ ] Munkáltató - Profilom: Álláshirdetés szerkesztése működik (2pt)
+- [x] Munkáltató - Profilom: Listázásra kerülnek a hozzáadott álláshirdetések, az egyes listaelemek mellett a szerkesztés, törlés és megtekintés opciók, megjelenik a “Hozzáadás” gomb (2pt)
+- [x] Munkáltató - Profilom: A megtekintés gomb hatására a felhasználó számára listázásra kerülnek az adott hirdetésre jelentkezett munkavállalók (1pt)
+- [x] Munkáltató - Profilom: Álláshirdetés törlése működik (1pt)
+- [x] Munkáltató - Álláshirdetés hozzáadása: Álláshirdetés hozzáadása működik (2pt)
+- [x] Munkáltató - Profilom: Álláshirdetés szerkesztése működik (2pt)
 - [x] Profilom: Kijelentkezés gomb működik(1pt)
 - [x] Igényes megjelenés (2pt)
 
@@ -267,4 +267,4 @@ Az elkészült program beadása a Canvasen történik, és két dolgot kell ide 
 
 - [ ] Plusz feladat: az álláshirdetések listája infinite-scrollinggal jelenik meg (+2pt)
 - [ ] Plusz feladat: az álláshirdetések létrehozásánál a munkáltató egy range-sliderrel tudja megadni a fizetés minimum és maximum értékét (+2pt)
-- [ ] Plusz feladat: Modalban jelenik meg az oldal valamely része (vagy az álláshirdetés leírása, vagy a az álláshirdetésre jelentkező emberek listája, akár a profiljai) (+1pt)
+- [x] Plusz feladat: Modalban jelenik meg az oldal valamely része (vagy az álláshirdetés leírása, vagy a az álláshirdetésre jelentkező emberek listája, akár a profiljai) (+1pt)
